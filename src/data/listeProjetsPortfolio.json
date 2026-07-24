@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Booki",
+    "type": "Application d’une agence de voyage",
+    "date": "02/2026",
+    "technologies": [
+      "HTML",
+      "CSS"
+    ],
+    "context": "Intégration à partir de maquette + responsive",
+    "github": "https://github.com/mattdusud/booki",
+    "demo": "https://mattdusud.github.io/booki/",
+    "demoNote": null,
+    "images": []
+  },
+  {
+    "name": "OhMyFood",
+    "type": "Application de restauration",
+    "date": "03/2026",
+    "technologies": [
+      "HTML",
+      "SCSS",
+      "Animations CSS"
+    ],
+    "context": "Développer un site « mobile first » qui répertorie les menus de restaurants gastronomiques. Gestion d’animations CSS",
+    "github": "https://github.com/mattdusud/OhMyFood/",
+    "demo": "https://mattdusud.github.io/OhMyFood/",
+    "demoNote": null,
+    "images": []
+  },
+  {
+    "name": "Sophie Bluel",
+    "type": "Portfolio d’une architecte d’intérieur",
+    "date": "04/2026",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "API REST"
+    ],
+    "context": "Créer le portfolio d’une architecte d’intérieur, avec possibilité d’ajouter et de supprimer des travaux si l’utilisateur est connecté.",
+    "github": "https://github.com/mattdusud/SophieBluel/",
+    "demo": "https://mattdusud.github.io/SophieBluel/",
+    "demoNote": "Le backend est manquant pour que la fonctionnalité soit pleinement opérationnelle.",
+    "images": []
+  },
+  {
+    "name": "Kasa",
+    "type": "Location immobilière",
+    "date": "05/2026",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "React Router"
+    ],
+    "context": "Refonte totale pour passer à une stack complète en JavaScript avec Node.js côté back-end et React côté front-end. Intégration d’un nouveau design à partir d’une maquette.",
+    "github": "https://github.com/mattdusud/kasa",
+    "demo": null,
+    "demoNote": null,
+    "images": []
+  },
+  {
+    "name": "Nina Carducci",
+    "type": "Site de photographe",
+    "date": "05/2026",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap"
+    ],
+    "context": "Services SEO : optimiser le référencement et l’accessibilité du site.",
+    "github": "https://github.com/mattdusud/ninacarducci.github.io-main",
+    "demo": null,
+    "demoNote": null,
+    "images": []
+  },
+  {
+    "name": "ArgentBank",
+    "type": "Application bancaire",
+    "date": "06/2026",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "API REST",
+      "Swagger",
+      "React",
+      "React Router",
+      "Redux Toolkit"
+    ],
+    "context": "Implémenter le front-end de l’application bancaire. Gérer la connexion utilisateur et la modification du nom d’utilisateur via l’API. Prévision des routes API.",
+    "github": "https://github.com/mattdusud/ArgentBank-Frontend-main",
+    "demo": null,
+    "demoNote": null,
+    "images": []
+  }
+]

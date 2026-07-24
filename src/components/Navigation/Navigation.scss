@@ -1,0 +1,15 @@
+.nav-link, nav {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    .active {
+        color: white;
+        text-decoration: none;
+    }
+}
