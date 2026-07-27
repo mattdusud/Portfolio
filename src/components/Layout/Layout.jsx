@@ -3,14 +3,18 @@ import Header from '../Header/Header'
 import Navigation from '../Navigation/Navigation'
 import './Layout.scss'
 
+import { motion, useScroll, useTransform, useMotionValue, useMotionValueEvent } from "motion/react"
+
+
 function Layout() {
+
   return (
     <div className="layout">
       <Header />
       <Navigation />
-      <main className="layout-content">
+      <motion.main className="layout-content">
         <Outlet />
-      </main>
+      </motion.main>
     </div>
   )
 }
