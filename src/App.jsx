@@ -8,13 +8,17 @@ import Qualification from "../src/pages/Qualification/Qualification.jsx"
 import Projets from "../src/pages/Projets/Projets.jsx"
 import Error from "./pages/Error/Error.jsx";
 //import Header from "./components/Header/Header";
+import { ScrollToTop } from "./components/ScrolltoTop/ScrollToTop.jsx";
+
 
 function App() {
+
+
   return (
     <>
       <SpaceBackground />
-
       <Router>
+      <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<About />} />

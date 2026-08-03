@@ -1,0 +1,90 @@
+.carrousel {
+    position: relative;
+    width: 1240px;
+    height: 300px;
+    margin-top: 10px;
+
+    @media (max-width: 1280px) {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+        margin-top: 10px;
+
+    }
+
+    @media (max-width: 785px) {
+        width: calc(100% - 40px);
+        height: 255px;
+        margin-top: 10px;
+    }
+
+    .carrousel-images {
+        height: 100%;
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin-bottom: 50px;
+
+            // &:hover {
+            //     height: auto;
+            // }
+        }
+    }
+
+    .carrousel-controls {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+       // left: 23px;
+       // right: 23px;
+        transform: translateY(-50%);
+        z-index: 3;
+
+        .carrousel-arrow {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform .2s ease-in-out;
+
+            @media (max-width: 785px) {
+                width: 24px;
+                height: 24px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            &:hover {
+                transform: scale(1.2);
+                transition: transform .2s ease-in-out;
+            }
+        }
+    }
+
+    .carrousel-counter {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+    }
+}

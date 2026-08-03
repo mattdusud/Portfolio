@@ -12,7 +12,8 @@
     "github": "https://github.com/mattdusud/booki",
     "demo": "https://mattdusud.github.io/booki/",
     "demoNote": null,
-    "images": []
+    "images": ["src/images/projets/booki1.webp",
+      "src/images/projets/booki2.webp"]
   },
   {
     "id": 2,
@@ -28,7 +29,10 @@
     "github": "https://github.com/mattdusud/OhMyFood/",
     "demo": "https://mattdusud.github.io/OhMyFood/",
     "demoNote": null,
-    "images": []
+    "images": ["src/images/projets/ohmyfood1.webp",
+      "src/images/projets/ohmyfood2.webp",
+      "src/images/projets/ohmyfood3.webp",
+      "src/images/projets/ohmyfood4.webp"]
   },
   {
     "id": 3,
@@ -45,7 +49,10 @@
     "github": "https://github.com/mattdusud/SophieBluel/",
     "demo": "https://mattdusud.github.io/SophieBluel/",
     "demoNote": "Le backend est manquant pour que la fonctionnalité soit pleinement opérationnelle.",
-    "images": []
+    "images": ["src/images/projets/sophiebluel1.webp",
+      "src/images/projets/sophiebluel2.webp",
+      "src/images/projets/sophiebluel3.webp",
+      "src/images/projets/sophiebluel4.webp"]
   },
   {
     "id": 4,
@@ -63,7 +70,10 @@
     "github": "https://github.com/mattdusud/kasa",
     "demo": null,
     "demoNote": null,
-    "images": []
+    "images": ["src/images/projets/kasa1.webp",
+      "src/images/projets/kasa2.webp",
+      "src/images/projets/kasa3.webp",
+      "src/images/projets/kasa4.webp"]
   },
   {
     "id": 5,
@@ -80,7 +90,8 @@
     "github": "https://github.com/mattdusud/ninacarducci.github.io-main",
     "demo": null,
     "demoNote": null,
-    "images": []
+    "images": ["src/images/projets/ninacarducci1.webp", 
+      "src/images/projets/ninacarducci2.webp"]
   },
   {
     "id": 6,
@@ -101,6 +112,8 @@
     "github": "https://github.com/mattdusud/ArgentBank-Frontend-main",
     "demo": null,
     "demoNote": null,
-    "images": []
+    "images": ["src/images/projets/argentbank1.webp", 
+      "src/images/projets/argentbank2.webp",
+      "src/images/projets/argentbank3.webp"]
   }
 ]

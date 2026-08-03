@@ -14,9 +14,9 @@ export default function Header() {
     const bloc1Y = useTransform(scrollY,[0,100],[0,-75], { clamp: true })
     const bloc2X = useTransform(scrollY, [0,100],[0,400])   
     const bloc2Y = useTransform(scrollY,[0,100],[0,-150], { clamp: true })
-    useMotionValueEvent(scrollY, "change", (latest) => {
-        console.log("scrollY header :", latest)
-    })
+    // useMotionValueEvent(scrollY, "change", (latest) => {
+    //     console.log("scrollY header :", latest)
+    // })
 
     return (
         <motion.header style={{ x: headerX }}>
@@ -24,15 +24,16 @@ export default function Header() {
                 style={{
                     width: imageSize,
                     height: imageSize
-                }}></motion.img>
+                }}
+                fetchPriority="high"
+                ></motion.img>
             <motion.h1 style={{ x: bloc1X, y: bloc1Y}}>Matthieu Giardina</motion.h1>
             <motion.h2 style={{ x: bloc1X, y: bloc1Y}}>FrontEnd Developer</motion.h2>
             <motion.ul style={{ x: bloc2X, y: bloc2Y}}>
-                <li><a target="_blank" rel="noopener noreferrer" href='https://x.com'><i class="fa-brands fa-x-twitter"></i></a></li>
-                <li><a target="_blank" rel="noopener noreferrer" href='mailto:matt@multimatt.fr'><i class="fa-regular fa-envelope"></i></a></li>
-                <li><a target="_blank" rel="noopener noreferrer" href='https://linkedin.com'><i class="fa-brands fa-square-linkedin"></i></a></li>
-                <li><a target="_blank" rel="noopener noreferrer" href='https://github.com/mattdusud'><i class="fa-brands fa-square-github"></i></a></li>
-                <li><a target="_blank" rel="noopener noreferrer" href='https://instagram.com'><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href='mailto:matt@multimatt.fr'><i className="fa-regular fa-envelope"></i></a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href='https://linkedin.com'><i className="fa-brands fa-square-linkedin"></i></a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href='https://github.com/mattdusud'><i className="fa-brands fa-square-github"></i></a></li>
+                {/* <li><a target="_blank" rel="noopener noreferrer" href='https://instagram.com'><i class="fa-brands fa-instagram"></i></a></li> */}
             </motion.ul>
             <motion.h2 style={{ x: bloc2X, y: bloc2Y}}>PACA - France</motion.h2>
         </motion.header>

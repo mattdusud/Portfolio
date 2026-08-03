@@ -3,12 +3,16 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "homepage": "https://mattdusud.github.io/Portfolio_Matt_Front",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "sass": "^1.101.7",
     "vite": "^8.1.1"
   },
@@ -16,6 +20,6 @@
     "@reduxjs/toolkit": "^2.12.0",
     "motion": "^12.42.2",
     "react-redux": "^9.3.0",
-    "react-router-dom": "^7.18.1"
+    "react-router-dom": "^7.11.0"
   }
 }
