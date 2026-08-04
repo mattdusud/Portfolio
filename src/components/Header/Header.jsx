@@ -28,7 +28,7 @@ export default function Header() {
                 fetchPriority="high"
                 ></motion.img>
             <motion.h1 style={{ x: bloc1X, y: bloc1Y}}>Matthieu Giardina</motion.h1>
-            <motion.h2 style={{ x: bloc1X, y: bloc1Y}}>FrontEnd Developer</motion.h2>
+            <motion.h2 style={{ x: bloc1X, y: bloc1Y}}>Developpeur FrontEnd</motion.h2>
             <motion.ul style={{ x: bloc2X, y: bloc2Y}}>
                 <li><a target="_blank" rel="noopener noreferrer" href='mailto:matt@multimatt.fr'><i className="fa-regular fa-envelope"></i></a></li>
                 <li><a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/matthieu-giardina-727259b4/'><i className="fa-brands fa-square-linkedin"></i></a></li>
