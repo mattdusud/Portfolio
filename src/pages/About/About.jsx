@@ -25,8 +25,8 @@ export default function About() {
                 mes compétences en explorant un nouvel univers : le développement web.`} />
 
             <CardP texte = {`Aujourd’hui, je mets à profit mon expérience technique, 
-            ma curiosité et mon goût pour l’apprentissage afin de concevoir des interfaces web modernes,
-             fonctionnelles et accessibles.`} />
+                ma curiosité et mon goût pour l’apprentissage afin de concevoir des interfaces web modernes,
+                fonctionnelles et accessibles.`} />
 
 
         </>

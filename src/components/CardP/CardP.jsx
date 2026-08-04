@@ -17,7 +17,7 @@ export default function CardP({texte}) {
 
     const opacity = useTransform(
         scrollYProgress,
-        [0, 0.8, 0.9, 1],
+        [0, 0.7, 0.71, 0.75],
         [0, 1, 1, 0]
     )
 

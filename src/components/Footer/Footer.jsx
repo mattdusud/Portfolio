@@ -33,6 +33,24 @@ export default function Footer() {
                     ))}
                     
                 </motion.div>
+                <motion.div
+                    className="footer__barre2"
+                    animate={{ x: ["-40%", "100%"] }}
+                    transition={{
+                        ease: "linear",
+                        duration: 30,
+                        repeat: Infinity,
+                    }}
+                >
+                    {footerItems.map((item, index) => (
+                        <span
+                            key={`original-${index}`}
+                            className="footer__item">
+                            {item}
+                        </span>
+                    ))}
+                    
+                </motion.div>
             </div>
         </footer>
     );
