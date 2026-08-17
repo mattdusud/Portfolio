@@ -2,8 +2,31 @@
     position: relative;
     width: 100%;
     z-index: -100;
+    padding-bottom: 0vh;
 
+    @media (max-width: 1400px) {
+        padding-bottom: 30vh;
+    }
+
+    @media (max-width: 1280px) {
+        padding-bottom: 35vh;
+    }
+
+    @media (max-width: 1000px) {
+        padding-bottom: 40vh;
+
+    }
+
+    @media (max-width: 785px) {
+        padding-bottom: 45vh;
+    }
+
+    @media (max-width: 500px) {
+        padding-bottom: 50vh;
+
+    }
 }
+
 
 .trajectory {
     position: fixed;
@@ -33,5 +56,15 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 600px;
+    // width: 600px;
+    width: 70%;
+    max-width: 600px;
+
+    @media (max-width: 1280px) {
+        // width: 400px;
+    }
+
+    @media (max-width: 785px) {
+        // width: 300px;
+    }
 }

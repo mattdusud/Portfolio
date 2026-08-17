@@ -9,6 +9,10 @@ export default function Projets() {
     const pathRef = useRef(null);
     const [count, setCount] = useState(1);
 
+
+    /////////////////////////////////////////////////
+    //   Gestion event fleches pour scroll auto.   //
+    /////////////////////////////////////////////////
     const cardScrollStep = [3150, 1950, 1950, 1950, 2300];
 
     useEffect(() => {
@@ -73,6 +77,35 @@ export default function Projets() {
         };
 
     }, [count]);
+
+    /////////////////////////////////////////////////
+    //   Gestion event resize pour ajustement card //
+    /////////////////////////////////////////////////
+    const [width, setWidth] = useState(window.innerWidth)
+
+    useEffect(() => {
+
+        const handleResize = () => { 
+            animate(
+                    window.scrollY,
+                    window.scrollY+0,
+                    {
+                        duration: 0.1,
+                        ease: "linear",
+                        onUpdate: (latest) => {
+                            window.scrollTo(0, latest);
+                        }
+                    }
+                );
+         }
+
+        window.addEventListener('resize', handleResize)
+
+        return () => {
+            window.removeEventListener('resize', handleResize)
+        }
+
+    }, []);
 
     return (
         <section className="projets">

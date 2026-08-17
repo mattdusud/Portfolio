@@ -85,6 +85,7 @@
         text-decoration: underline 0.15em rgba(255, 255, 255, 0);
         text-underline-offset: 0.2em;
         transition: text-decoration-color 300ms, text-underline-offset 300ms;
+        text-align: center;
 
         &:hover {
             text-decoration-color: rgba(255, 255, 255, 1);

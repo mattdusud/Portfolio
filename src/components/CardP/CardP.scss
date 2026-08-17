@@ -8,6 +8,16 @@
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     padding: 20px;
+    font-size: 20px;
+
+    @media (max-width: 1280px) {
+        font-size: 17px;
+
+    }
+
+        @media (max-width: 785px) {
+        font-size: 15px;
+    }
 
 
     p {
@@ -16,8 +26,18 @@
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 300;
+
+        @media (max-width: 1280px) {
+        font-size: 17px;
+
+    }
+
+        @media (max-width: 785px) {
+        font-size: 15px;
+    }
+
     }
 
 }

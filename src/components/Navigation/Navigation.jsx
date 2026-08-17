@@ -10,10 +10,11 @@ export default function Navigation() {
 
     return (
     <motion.nav style={{ y:navY }} className="nav">
-        <NavLink to="/About" className="nav-link">Qui suis-je</NavLink>
-        <NavLink to="/Experience" className="nav-link">Experience</NavLink>
-        <NavLink to="/Qualification" className="nav-link">Diplômes</NavLink>
-        <NavLink to="/Projets" className="nav-link">Projets</NavLink>
+        <NavLink to="/About" className="nav-link" name="lien-About">Qui suis-je</NavLink>
+        <NavLink to="/Experience" className="nav-link" name="lien-Experience">Experience</NavLink>
+        <NavLink to="/Qualification" className="nav-link" name="lien-Diplômes">Diplômes</NavLink>
+        <NavLink to="/Projets" className="nav-link" name="lien-Projets">Projets</NavLink>
+        <NavLink to="/Hobbies" className="nav-link" name="lien-Hobbies">Hobbies</NavLink>
     </motion.nav>
 
     )

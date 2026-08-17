@@ -7,6 +7,7 @@ import Experience from "../src/pages/Experience/Experience.jsx"
 import Qualification from "../src/pages/Qualification/Qualification.jsx"
 import Projets from "../src/pages/Projets/Projets.jsx"
 import Error from "./pages/Error/Error.jsx";
+import Hobbies from "./pages/Hobbies/Hobbies.jsx";
 //import Header from "./components/Header/Header";
 import { ScrollToTop } from "./components/ScrolltoTop/ScrollToTop.jsx";
 
@@ -17,7 +18,7 @@ function App() {
   return (
     <>
       <SpaceBackground />
-      <Router>
+      <Router basename="/Portfolio_Matt_Front">
       <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
@@ -26,8 +27,10 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/qualification" element={<Qualification/>} />
           <Route path="/projets" element={<Projets />} />
+          <Route path="/hobbies" element={<Hobbies />} />
+          <Route path="*" element={<Error />} />
         </Route>
-        <Route path="*" element={<Error />} />
+
       </Routes>
     </Router>
     </>

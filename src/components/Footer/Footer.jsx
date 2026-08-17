@@ -20,7 +20,7 @@ export default function Footer() {
                     animate={{ x: ["100%", "-50%"] }}
                     transition={{
                         ease: "linear",
-                        duration: 30,
+                        duration: 60,
                         repeat: Infinity,
                     }}
                 >
@@ -36,9 +36,10 @@ export default function Footer() {
                 <motion.div
                     className="footer__barre2"
                     animate={{ x: ["-40%", "100%"] }}
+                    //onMouseOver={}
                     transition={{
                         ease: "linear",
-                        duration: 30,
+                        duration: 60,
                         repeat: Infinity,
                     }}
                 >
