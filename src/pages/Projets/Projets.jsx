@@ -78,35 +78,6 @@ export default function Projets() {
 
     }, [count]);
 
-    /////////////////////////////////////////////////
-    //   Gestion event resize pour ajustement card //
-    /////////////////////////////////////////////////
-    const [width, setWidth] = useState(window.innerWidth)
-
-    useEffect(() => {
-
-        const handleResize = () => { 
-            animate(
-                    window.scrollY,
-                    window.scrollY+0,
-                    {
-                        duration: 0.1,
-                        ease: "linear",
-                        onUpdate: (latest) => {
-                            window.scrollTo(0, latest);
-                        }
-                    }
-                );
-         }
-
-        window.addEventListener('resize', handleResize)
-
-        return () => {
-            window.removeEventListener('resize', handleResize)
-        }
-
-    }, []);
-
     return (
         <section className="projets">
 

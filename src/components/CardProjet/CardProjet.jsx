@@ -1,6 +1,6 @@
 import './CardProjet.scss'
 import { motion, useScroll, useMotionValue, useMotionValueEvent, useTransform } from 'motion/react'
-import { useRef } from 'react'
+import { useRef, useEffect } from 'react'
 import { Navigate } from 'react-router-dom'
 import projets from '/src/data/listeProjetsPortfolio.json'
 import MiniSlider from '../MiniSlider/MiniSlider'
@@ -29,7 +29,7 @@ export default function CardProjet({ id, pathRef }) {
 
     const opacity = useTransform(scrollYProgress, [0, 0.15, 0.85, 1], [0, 1, 1, 0])
 
-    useMotionValueEvent(scrollYProgress, "change", (progress) => {
+    const updatePosition = (progress) => {
 
         const path = pathRef.current;
         const svg = path.ownerSVGElement;
@@ -47,15 +47,13 @@ export default function CardProjet({ id, pathRef }) {
 
             const pathProgress = startProgress + (targetProgress - startProgress) * localProgress;
 
-            const point = path.getPointAtLength( pathProgress * pathLength )
+            const point = path.getPointAtLength(pathProgress * pathLength)
 
             x.set(point.x * scaleX)
             y.set(point.y * scaleY)
 
             return
         }
-
-
 
         if (progress < 0.8) {
 
@@ -78,31 +76,72 @@ export default function CardProjet({ id, pathRef }) {
         const exitDistance = localProgress * 1000
         x.set((end.x + dx * exitDistance / 50) * scaleX)
         y.set((end.y + dy * exitDistance / 50) * scaleY)
-    })
+    }
+
+    useMotionValueEvent(scrollYProgress, "change", updatePosition)
+
+    useEffect(() => {
+
+    const handleResize = () => {
+        updatePosition(scrollYProgress.get())
+    }
+
+    window.addEventListener("resize", handleResize)
+
+    return () => {
+        window.removeEventListener("resize", handleResize)
+    }
+
+}, [])
 
     const xOffset = useTransform(x, value => {
         if (projet.id === 1) {
-            const cardWidth =
-                articleRef.current?.getBoundingClientRect().width ?? 0
-
-            return value - cardWidth / 2
+            const cardWidth = articleRef.current?.getBoundingClientRect().width ?? 0
+            return value - cardWidth / 2 
         }
 
         if (projet.id === 6) {
-            return value + 125
+            return value + 80
         }
 
         return value
     }
-)
+    )
 
     const yOffset = useTransform(
-        y,
-        value => {
-            if (projet.id === 1) return value - 100
-            return value
+    y,
+    value => {
+
+        let offset = 0
+
+        if (window.innerWidth <= 600) {
+            offset = 120;
+            if (projet.id === 1) {
+            offset -= 240;
+            }
         }
-    )
+        else if (window.innerWidth <= 700) {
+            offset = 100
+            if (projet.id === 1) {
+            offset -= 200
+            }
+        }
+        else if (window.innerWidth <= 1280) {
+            offset = 80
+            if (projet.id === 1) {
+            offset -= 200
+            }
+        }
+        else if (window.innerWidth <= 1920) {
+            offset = 0
+            if (projet.id === 1) {
+            offset -= 150
+            }
+        }
+
+        return value + offset
+    }
+)
 
     return (
 
@@ -133,7 +172,7 @@ export default function CardProjet({ id, pathRef }) {
 
 
                 <a target="_blank" rel="noopener noreferrer" href={projet.github}>
-                    Github: {projet.github}
+                    <i className="fa-brands fa-square-github" name="lien-gitHub"></i>Github: {projet.github}
                 </a>
 
                 {projet.images.length !== 0 ? <div><MiniSlider images={projet.images} /></div> : <div>Pas de photos</div>}
