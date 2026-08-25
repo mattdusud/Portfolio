@@ -74,9 +74,9 @@ export default function Header() {
             <motion.h1 style={{ x: bloc1X, y: bloc1Y }}>Matthieu Giardina</motion.h1>
             <motion.h2 style={{ x: bloc1X, y: bloc1Y }}>Developpeur FrontEnd</motion.h2>
             <motion.ul style={{ x: bloc2X1, y: bloc2Y1 }}>
-                <li><a target="_blank" rel="noopener noreferrer" href='mailto:matt@multimatt.fr'><i className="fa-regular fa-envelope" name="lien-email"></i></a></li>
-                <li><a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/matthieu-giardina-727259b4/'><i className="fa-brands fa-square-linkedin" name="lien-linkedin"></i></a></li>
-                <li><a target="_blank" rel="noopener noreferrer" href='https://github.com/mattdusud'><i className="fa-brands fa-square-github" name="lien-gitHub"></i></a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href='mailto:matt@multimatt.fr' name="lien-email"><i className="fa-regular fa-envelope" name="lien-email-ico" alt="isone email"></i></a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/matthieu-giardina-727259b4/' name="lien-linkedin"><i className="fa-brands fa-square-linkedin" name="lien-linkedin-ico" alt="icone Linkedin"></i></a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href='https://github.com/mattdusud' name="lien-gitHub"><i className="fa-brands fa-square-github" name="lien-gitHub-ico" alt="icone github"></i></a></li>
                 {/* <li><a target="_blank" rel="noopener noreferrer" href='https://instagram.com'><i class="fa-brands fa-instagram"></i></a></li> */}
             </motion.ul>
             <motion.h2 style={{ x: bloc2X2, y: bloc2Y2 }}>PACA - France</motion.h2>

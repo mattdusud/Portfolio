@@ -28,7 +28,11 @@ export default function CardProjet({ id, pathRef }) {
     const y = useMotionValue(0)
 
     const opacity = useTransform(scrollYProgress, [0, 0.15, 0.85, 1], [0, 1, 1, 0])
+    const pointerEvents = useTransform(opacity, value => value > 0.1 ? "auto" : "none")
 
+    //////////////////////////////////////////////////////
+    // fonction de position pour utilisation si resize  //
+    //////////////////////////////////////////////////////
     const updatePosition = (progress) => {
 
         const path = pathRef.current;
@@ -150,7 +154,7 @@ export default function CardProjet({ id, pathRef }) {
                 ref={articleRef}
                 id={`projet${id}`}
                 className="card"
-                style={{ x: xOffset, y: yOffset, opacity }}>
+                style={{ x: xOffset, y: yOffset, opacity, pointerEvents }}>
 
                 <h2>{projet.name}</h2>
 
@@ -168,6 +172,7 @@ export default function CardProjet({ id, pathRef }) {
 
                 <div>
                     <p>{projet.context}</p>
+                    <p><span>Améliorations:</span> {projet.toImprove}</p>
                 </div>
 
 

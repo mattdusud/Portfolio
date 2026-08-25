@@ -11,8 +11,9 @@
     "context": "Intégration à partir de maquette + responsive",
     "github": "https://github.com/mattdusud/booki",
     "demo": "https://mattdusud.github.io/booki/",
-    "demoNote": null,
-    "images": ["/Portfolio_Matt_Front//images/projets/booki1.webp",
+    "demoNote": "null",
+    "toImprove":"Pas de retour de l'évaluateur",
+    "images": ["/Portfolio_Matt_Front/images/projets/booki1.webp",
       "/Portfolio_Matt_Front/images/projets/booki2.webp"]
   },
   {
@@ -29,6 +30,7 @@
     "github": "https://github.com/mattdusud/OhMyFood/",
     "demo": "https://mattdusud.github.io/OhMyFood/",
     "demoNote": null,
+    "toImprove":"text by default",
     "images": ["/Portfolio_Matt_Front/images/projets/ohmyfood1.webp",
       "/Portfolio_Matt_Front/images/projets/ohmyfood2.webp",
       "/Portfolio_Matt_Front/images/projets/ohmyfood3.webp",
@@ -49,6 +51,7 @@
     "github": "https://github.com/mattdusud/SophieBluel/",
     "demo": "https://mattdusud.github.io/SophieBluel/",
     "demoNote": "Le backend est manquant pour que la fonctionnalité soit pleinement opérationnelle.",
+    "toImprove":"text by default",
     "images": ["/Portfolio_Matt_Front/images/projets/sophiebluel1.webp",
       "/Portfolio_Matt_Front/images/projets/sophiebluel2.webp",
       "/Portfolio_Matt_Front/images/projets/sophiebluel3.webp",
@@ -70,6 +73,7 @@
     "github": "https://github.com/mattdusud/kasa",
     "demo": null,
     "demoNote": null,
+    "toImprove":"Liens d'assets à modifier pour mise en production",
     "images": ["/Portfolio_Matt_Front/images/projets/kasa1.webp",
       "/Portfolio_Matt_Front/images/projets/kasa2.webp",
       "/Portfolio_Matt_Front/images/projets/kasa3.webp",
@@ -90,6 +94,7 @@
     "github": "https://github.com/mattdusud/ninacarducci.github.io-main",
     "demo": null,
     "demoNote": null,
+    "toImprove":"text by default",
     "images": ["/Portfolio_Matt_Front/images/projets/ninacarducci1.webp", 
       "/Portfolio_Matt_Front/images/projets/ninacarducci2.webp"]
   },
@@ -112,6 +117,7 @@
     "github": "https://github.com/mattdusud/ArgentBank-Frontend-main",
     "demo": null,
     "demoNote": null,
+    "toImprove":"text by default",
     "images": ["/Portfolio_Matt_Front/images/projets/argentbank1.webp", 
       "/Portfolio_Matt_Front/images/projets/argentbank2.webp",
       "/Portfolio_Matt_Front/images/projets/argentbank3.webp"]
