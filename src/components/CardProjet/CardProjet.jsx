@@ -86,22 +86,22 @@ export default function CardProjet({ id, pathRef }) {
 
     useEffect(() => {
 
-    const handleResize = () => {
-        updatePosition(scrollYProgress.get())
-    }
+        const handleResize = () => {
+            updatePosition(scrollYProgress.get())
+        }
 
-    window.addEventListener("resize", handleResize)
+        window.addEventListener("resize", handleResize)
 
-    return () => {
-        window.removeEventListener("resize", handleResize)
-    }
+        return () => {
+            window.removeEventListener("resize", handleResize)
+        }
 
-}, [])
+    }, [])
 
     const xOffset = useTransform(x, value => {
         if (projet.id === 1) {
             const cardWidth = articleRef.current?.getBoundingClientRect().width ?? 0
-            return value - cardWidth / 2 
+            return value - cardWidth / 2
         }
 
         if (projet.id === 6) {
@@ -113,39 +113,32 @@ export default function CardProjet({ id, pathRef }) {
     )
 
     const yOffset = useTransform(
-    y,
-    value => {
+        y,
+        value => {
 
-        let offset = 0
+            if (projet.id !== 1) {
+                return value
+            }
 
-        if (window.innerWidth <= 600) {
-            offset = 120;
-            if (projet.id === 1) {
-            offset -= 240;
+            if (window.innerWidth <= 600) {
+                return value - 120
             }
-        }
-        else if (window.innerWidth <= 700) {
-            offset = 100
-            if (projet.id === 1) {
-            offset -= 200
-            }
-        }
-        else if (window.innerWidth <= 1280) {
-            offset = 80
-            if (projet.id === 1) {
-            offset -= 200
-            }
-        }
-        else if (window.innerWidth <= 1920) {
-            offset = 0
-            if (projet.id === 1) {
-            offset -= 150
-            }
-        }
 
-        return value + offset
-    }
-)
+            if (window.innerWidth <= 700) {
+                return value - 100
+            }
+
+            if (window.innerWidth <= 1280) {
+                return value - 120
+            }
+
+            if (window.innerWidth <= 1920) {
+                return value - 150
+            }
+
+            return value
+        }
+    )
 
     return (
 
@@ -163,16 +156,25 @@ export default function CardProjet({ id, pathRef }) {
                     <p>{projet.date}</p>
                 </div>
 
-                <ul>
+                <ul>Stack:
                     {projet.technologies.map((technologie, index) => (
                         <li key={index}>{technologie}</li>
                     )
                     )}
                 </ul>
 
+                <h3>Compétences travaillées</h3>
+                <ul>
+                    {projet.competences.map((competence, index) => (
+                        <li key={index + 100}>{competence}</li>
+                    )
+                    )}
+                </ul>
+
                 <div>
-                    <p>{projet.context}</p>
+                    <p><span>Objectifs:</span> {projet.context}</p>
                     <p><span>Améliorations:</span> {projet.toImprove}</p>
+                    <p><span>Résultat:</span> {projet.resultat}</p>
                 </div>
 
 

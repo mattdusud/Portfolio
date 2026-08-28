@@ -2,7 +2,7 @@ import './Footer.scss'
 import { motion } from "framer-motion";
 
 export default function Footer() {
-    const footerItems = [
+    const footerItems1 = [
         "HTML",
         "CSS",
         "Javascript",
@@ -12,9 +12,20 @@ export default function Footer() {
         "express.js"
     ];
 
+    const footerItems2 = [
+        "C/C#",
+        "Arduino",
+        "Labview",
+        "Python",
+        "Fusion 360",
+        "OnShape",
+        "Office Suite"
+    ];
+
     return (
         <footer className="footer">
             <div className="footer__conteneur">
+                <p>Ma stack</p>
                 <motion.div
                     className="footer__barre"
                     animate={{ x: ["100%", "-50%"] }}
@@ -24,7 +35,7 @@ export default function Footer() {
                         repeat: Infinity,
                     }}
                 >
-                    {footerItems.map((item, index) => (
+                    {footerItems1.map((item, index) => (
                         <span
                             key={`original-${index}`}
                             className="footer__item">
@@ -43,7 +54,7 @@ export default function Footer() {
                         repeat: Infinity,
                     }}
                 >
-                    {footerItems.map((item, index) => (
+                    {footerItems2.map((item, index) => (
                         <span
                             key={`original-${index}`}
                             className="footer__item">
