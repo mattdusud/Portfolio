@@ -71,6 +71,7 @@ src/
 ├── App.jsx
 ├── main.jsx
 └── ...
+```
 
 ## 🚀 Installation
 
@@ -84,16 +85,65 @@ src/
 ```bash
 git clone https://github.com/mattdusud/Portfolio_Matt_Front.git
 cd Portfolio_Matt_Front
+```
 
+### Installer les dépendances
 
-## Installer les dépendences
 ```bash
 npm install
+```
 
-## Lancer le serveur de developpement
+### Lancer le serveur de développement
+
 ```bash
 npm run dev
+```
 
 Le projet sera alors disponible à l'adresse indiquée par Vite, généralement :
 
+```text
 http://localhost:5173
+```
+
+
+## 📦 Build de production
+
+Pour générer la version de production :
+
+```bash
+npm run build
+```
+
+Pour prévisualiser le build :
+
+```bash
+npm run preview
+```
+
+---
+
+## 🌍 Déploiement
+
+Le portfolio est actuellement déployé avec **GitHub Pages**.
+
+### Version en ligne
+
+👉 [Voir le portfolio](https://mattdusud.github.io/Portfolio_Matt_Front/)
+
+Le projet utilise Vite pour générer le build de production avant son déploiement.
+
+## 👤 Auteur
+
+**Matthieu Giardina**
+
+Développeur Web — Front-End
+
+Passionné par la technologie et la création d'interfaces interactives, je développe mes compétences autour de JavaScript, React et du développement front-end.
+
+---
+
+## 📄 Licence
+
+Ce projet est un portfolio personnel.
+
+Le code est public à des fins de présentation et d'apprentissage.
