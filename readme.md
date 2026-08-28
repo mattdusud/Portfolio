@@ -71,3 +71,29 @@ src/
 ├── App.jsx
 ├── main.jsx
 └── ...
+
+## 🚀 Installation
+
+### Prérequis
+
+- [Node.js](https://nodejs.org/)
+- npm
+
+### Cloner le projet
+
+```bash
+git clone https://github.com/mattdusud/Portfolio_Matt_Front.git
+cd Portfolio_Matt_Front
+
+
+## Installer les dépendences
+```bash
+npm install
+
+## Lancer le serveur de developpement
+```bash
+npm run dev
+
+Le projet sera alors disponible à l'adresse indiquée par Vite, généralement :
+
+http://localhost:5173
