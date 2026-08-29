@@ -5,7 +5,7 @@
 [![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
 [![SCSS](https://img.shields.io/badge/SCSS-CSS-CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/)
 
-## 🌐 Présentation
+## Présentation
 
 Ce projet est mon **portfolio personnel**, développé avec React et Vite.
 
@@ -13,11 +13,11 @@ L'objectif est de présenter mon parcours, mes compétences et les différents p
 
 J'ai également souhaité utiliser ce portfolio comme un terrain d'expérimentation pour travailler les **animations, les interactions et le responsive design**, plutôt que de créer simplement une succession de pages statiques.
 
-### 🚀 [Voir le portfolio en ligne](https://mattdusud.github.io/Portfolio_Matt_Front/)
+### [Voir le portfolio en ligne](https://mattdusud.github.io/Portfolio_Matt_Front/)
 
 ---
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
 - **Design responsive** adapté aux différentes tailles d'écran
 - **Animations au scroll** avec Motion
@@ -32,7 +32,7 @@ J'ai également souhaité utiliser ce portfolio comme un terrain d'expérimentat
 
 ---
 
-## 🛠️ Technologies utilisées
+## Technologies utilisées
 
 | Technologie | Utilisation |
 |---|---|
@@ -47,7 +47,7 @@ J'ai également souhaité utiliser ce portfolio comme un terrain d'expérimentat
 
 ---
 
-## 📁 Structure du projet
+## Structure du projet
 
 ```text
 src/
@@ -73,7 +73,7 @@ src/
 └── ...
 ```
 
-## 🚀 Installation
+## Installation
 
 ### Prérequis
 
@@ -106,7 +106,7 @@ http://localhost:5173
 ```
 
 
-## 📦 Build de production
+## Build de production
 
 Pour générer la version de production :
 
@@ -122,17 +122,17 @@ npm run preview
 
 ---
 
-## 🌍 Déploiement
+## Déploiement
 
 Le portfolio est actuellement déployé avec **GitHub Pages**.
 
 ### Version en ligne
 
-👉 [Voir le portfolio](https://mattdusud.github.io/Portfolio_Matt_Front/)
+ [Voir le portfolio](https://mattdusud.github.io/Portfolio_Matt_Front/)
 
 Le projet utilise Vite pour générer le build de production avant son déploiement.
 
-## 👤 Auteur
+## Auteur
 
 **Matthieu Giardina**
 
@@ -142,7 +142,7 @@ Passionné par la technologie et la création d'interfaces interactives, je dév
 
 ---
 
-## 📄 Licence
+## Licence
 
 Ce projet est un portfolio personnel.
 
