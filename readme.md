@@ -130,7 +130,6 @@ Le portfolio est actuellement déployé avec **GitHub Pages**.
 
  [Voir le portfolio](https://mattdusud.github.io/Portfolio_Matt_Front/)
 
-Le projet utilise Vite pour générer le build de production avant son déploiement.
 
 ## Auteur
 
