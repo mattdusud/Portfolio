@@ -1,6 +1,6 @@
 # Portfolio — Matthieu Giardina
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live-000000?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mattdusud.github.io/Portfolio_Matt_Front/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-000000?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mattdusud.github.io/Portfolio/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
 [![SCSS](https://img.shields.io/badge/SCSS-CSS-CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/)
@@ -13,7 +13,7 @@ L'objectif est de présenter mon parcours, mes compétences et les différents p
 
 J'ai également souhaité utiliser ce portfolio comme un terrain d'expérimentation pour travailler les **animations, les interactions et le responsive design**, plutôt que de créer simplement une succession de pages statiques.
 
-### [Voir le portfolio en ligne](https://mattdusud.github.io/Portfolio_Matt_Front/)
+### [Voir le portfolio en ligne](https://mattdusud.github.io/Portfolio)
 
 ---
 
@@ -83,7 +83,7 @@ src/
 ### Cloner le projet
 
 ```bash
-git clone https://github.com/mattdusud/Portfolio_Matt_Front.git
+git clone https://github.com/mattdusud/Portfolio.git
 cd Portfolio_Matt_Front
 ```
 
@@ -128,7 +128,7 @@ Le portfolio est actuellement déployé avec **GitHub Pages**.
 
 ### Version en ligne
 
- [Voir le portfolio](https://mattdusud.github.io/Portfolio_Matt_Front/)
+ [Voir le portfolio](https://mattdusud.github.io/Portfolio/)
 
 
 ## Auteur
