@@ -1,29 +1,84 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Open Graph meta pour Facebook -->
-    <meta property="og:title" content="Matthieu Giardina - Developpeur Front-end" />
-    <meta property="og:url" content="https://mattdusud.github.io/Portfolio/" />
-    <meta property="og:image" content="https://mattdusud.github.io/Portfolio/images/profilpic.webp" />
-    <meta property="og:description" content="Portfolio web du développeur front-end Matthieu Giardina" />
-    <meta property="og:site_name" content="Matthieu Giardina - Developpeur Front-end" />
-    <meta property="og:type" content="website" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preload" href="style.scss" as="style"/>
-    <link rel="preload" href="./src/components/Header/Header.jsx" as="script"/>
-    <link rel="preload" href="./src/images/profilpic.webp" as="image" fetchpriority="high"/>
-    <script src="https://kit.fontawesome.com/1d25dbe304.js" crossorigin="anonymous" defer></script>
-    <title>Matthieu Giardina - Developpeur FrontEnd</title>
-  </head>
+  <!-- Open Graph meta pour Facebook -->
+  <meta property="og:title" content="Matthieu Giardina - Developpeur Front-end" />
+  <meta property="og:url" content="https://mattdusud.github.io/Portfolio/" />
+  <meta property="og:image" content="https://mattdusud.github.io/Portfolio/images/profilpic.webp" />
+  <meta property="og:description" content="Portfolio web du développeur front-end Matthieu Giardina" />
+  <meta property="og:site_name" content="Matthieu Giardina - Developpeur Front-end" />
+  <meta property="og:type" content="website" />
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx" defer></script>
-  </body>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preload" href="style.scss" as="style" />
+  <link rel="preload" href="./src/components/Header/Header.jsx" as="script" />
+  <link rel="preload" href="./src/images/profilpic.webp" as="image" fetchpriority="high" />
+  <script src="https://kit.fontawesome.com/1d25dbe304.js" crossorigin="anonymous" defer></script>
+  <title>Matthieu Giardina - Developpeur FrontEnd</title>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mattdusud.github.io/Portfolio/",
+        "name": "Matthieu Giardina — Développeur Web",
+        "url": "https://mattdusud.github.io/Portfolio/"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://mattdusud.github.io/Portfolio/About",
+        "name": "Matthieu Giardina",
+        "jobTitle": "Développeur Web Front-end",
+        "url": "https://mattdusud.github.io/Portfolio/",
+        "knowsAbout": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "SCSS", 
+          "Github",
+          "Microsoft VS Code",
+          "C/C#", 
+          "Arduino", 
+          "3D modeling",
+          "3D Printing",
+          "Laser engraving/Cutting"
+        ],
+        "sameAs": [
+          "https://github.com/mattdusud/",
+          "https://www.linkedin.com/in/matthieu-giardina-727259b4/"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://mattdusud.github.io/Portfolio/",
+        "url": "https://mattdusud.github.io/Portfolio/",
+        "name": "Matthieu Giardina — Développeur Web Front-end",
+        "isPartOf": {
+          "@id": "https://mattdusud.github.io/Portfolio/"
+        },
+        "about": {
+          "@id": "https://mattdusud.github.io/Portfolio/About"
+        }
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx" defer></script>
+</body>
+
 </html>
