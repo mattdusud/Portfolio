@@ -1,9 +1,9 @@
 {
-  "name": "portfolio-matt-front",
+  "name": "portfolio",
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "homepage": "https://mattdusud.github.io/Portfolio_Matt_Front",
+  "homepage": "https://mattdusud.github.io/Portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
