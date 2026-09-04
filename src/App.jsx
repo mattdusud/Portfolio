@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <SpaceBackground />
-      <Router basename="/Portfolio_Matt_Front">
+      <Router basename="/Portfolio">
       <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
