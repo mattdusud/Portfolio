@@ -17,8 +17,8 @@
                   "Intégrer du contenu conformément à une maquette avec HTML et CSS"],
     "toImprove":"Pas de retour de l'évaluateur",
     "resultat":"Projet soutenu avec succès",
-    "images": ["/Portfolio_Matt_Front/images/projets/booki1.webp",
-      "/Portfolio_Matt_Front/images/projets/booki2.webp"]
+    "images": ["/Portfolio/images/projets/booki1.webp",
+      "/Portfolio/images/projets/booki2.webp"]
   },
   {
     "id": 2,
@@ -39,10 +39,10 @@
                   "Versionner son projet avec Git et Github"],
     "toImprove":"trouver icones FontAwesome pour remplacer les svg (si validation client)",
     "resultat":"Projet soutenu avec succès",
-    "images": ["/Portfolio_Matt_Front/images/projets/ohmyfood1.webp",
-      "/Portfolio_Matt_Front/images/projets/ohmyfood2.webp",
-      "/Portfolio_Matt_Front/images/projets/ohmyfood3.webp",
-      "/Portfolio_Matt_Front/images/projets/ohmyfood4.webp"]
+    "images": ["/Portfolio/images/projets/ohmyfood1.webp",
+      "/Portfolio/images/projets/ohmyfood2.webp",
+      "/Portfolio/images/projets/ohmyfood3.webp",
+      "/Portfolio/images/projets/ohmyfood4.webp"]
   },
   {
     "id": 3,
@@ -64,10 +64,10 @@
                   "Manipuler les éléments du DOM avec JavaScript"],
     "toImprove":"Commentaires type JSDOC, fichier .env, utiliser innerHTML",
     "resultat":"Projet soutenu avec succès",
-    "images": ["/Portfolio_Matt_Front/images/projets/sophiebluel1.webp",
-      "/Portfolio_Matt_Front/images/projets/sophiebluel2.webp",
-      "/Portfolio_Matt_Front/images/projets/sophiebluel3.webp",
-      "/Portfolio_Matt_Front/images/projets/sophiebluel4.webp"]
+    "images": ["/Portfolio/images/projets/sophiebluel1.webp",
+      "/Portfolio/images/projets/sophiebluel2.webp",
+      "/Portfolio/images/projets/sophiebluel3.webp",
+      "/Portfolio/images/projets/sophiebluel4.webp"]
   },
   {
     "id": 4,
@@ -92,10 +92,10 @@
                   "Développer une interface web avec Sass"],
     "toImprove":"Liens d'assets à modifier pour mise en production",
     "resultat":"Projet soutenu avec succès",
-    "images": ["/Portfolio_Matt_Front/images/projets/kasa1.webp",
-      "/Portfolio_Matt_Front/images/projets/kasa2.webp",
-      "/Portfolio_Matt_Front/images/projets/kasa3.webp",
-      "/Portfolio_Matt_Front/images/projets/kasa4.webp"]
+    "images": ["/Portfolio/images/projets/kasa1.webp",
+      "/Portfolio/images/projets/kasa2.webp",
+      "/Portfolio/images/projets/kasa3.webp",
+      "/Portfolio/images/projets/kasa4.webp"]
   },
   {
     "id": 5,
@@ -115,8 +115,8 @@
     "competences":["Optimiser la performance d'un site web"],
     "toImprove":"Approfondir certaines optimisations avancées (lazy loading, stratégie de cache, ..).",
     "resultat":"Projet soutenu avec succès",
-    "images": ["/Portfolio_Matt_Front/images/projets/ninacarducci1.webp", 
-      "/Portfolio_Matt_Front/images/projets/ninacarducci2.webp"]
+    "images": ["/Portfolio/images/projets/ninacarducci1.webp", 
+      "/Portfolio/images/projets/ninacarducci2.webp"]
   },
   {
     "id": 6,
@@ -142,8 +142,8 @@
                   "Implémenter gestion de data avec Redux => assurer le fonctionnement du front"],
     "toImprove":"L'affichage des comptes doit être pris en compte sur l'API",
     "resultat":"Projet soutenu avec succès",
-    "images": ["/Portfolio_Matt_Front/images/projets/argentbank1.webp", 
-      "/Portfolio_Matt_Front/images/projets/argentbank2.webp",
-      "/Portfolio_Matt_Front/images/projets/argentbank3.webp"]
+    "images": ["/Portfolio/images/projets/argentbank1.webp", 
+      "/Portfolio/images/projets/argentbank2.webp",
+      "/Portfolio/images/projets/argentbank3.webp"]
   }
 ]
