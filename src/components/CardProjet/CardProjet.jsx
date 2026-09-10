@@ -142,7 +142,7 @@ export default function CardProjet({ id, pathRef }) {
 
     return (
 
-        <div ref={cardRef} className="card-trigger">
+        <div ref={cardRef} id={`projet-${projet.name}`.replaceAll(' ','')} className="card-trigger">
             <motion.article
                 ref={articleRef}
                 id={`projet${id}`}
