@@ -13,7 +13,7 @@ export default function Projets() {
     /////////////////////////////////////////////////
     //   Gestion event fleches pour scroll auto.   //
     /////////////////////////////////////////////////
-    const cardScrollStep = [3150, 1950, 1950, 1950, 2300];
+    const cardScrollStep = [6300, 3900, 3900, 3900, 4000];
 
     useEffect(() => {
 
@@ -26,8 +26,8 @@ export default function Projets() {
 
                 const step = cardScrollStep[count - 1];
 
-                console.log("Projet actuel :", count);
-                console.log("Scroll de :", step);
+                // console.log("Projet actuel :", count);
+                // console.log("Scroll de :", step);
 
                 setCount(count + 1);
 
@@ -51,8 +51,8 @@ export default function Projets() {
 
                 const step = cardScrollStep[count - 2];
 
-                console.log("Projet actuel :", count);
-                console.log("Scroll de :", step);
+                // console.log("Projet actuel :", count);
+                // console.log("Scroll de :", step);
 
                 setCount(count - 1);
 
