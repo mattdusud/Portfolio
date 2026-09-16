@@ -11,7 +11,9 @@ export default function ModalePhoto({ altTxt, onClose, images, slide }) {
     useEffect( () => {
         setSlideNumber(slide);
     },[slide])
-
+    const root = document.getElementById("root");
+    root.classList.add("no-scroll");
+    
     return createPortal(
         <><div className="modale" onClick={onClose} >
             <div className="modale--close" onClick={onClose}>x</div>

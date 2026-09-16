@@ -15,7 +15,7 @@
     "competences":["Implémenter une interface responsive avec HTML et CSS",
                   "Installer un environnement de développement front-end", 
                   "Intégrer du contenu conformément à une maquette avec HTML et CSS"],
-    "toImprove":"Pas de retour de l'évaluateur",
+    "toImprove":"lier à un backend",
     "resultat":"Projet soutenu avec succès",
     "images": ["/Portfolio/images/projets/booki1.webp",
       "/Portfolio/images/projets/booki2.webp"]

@@ -12,7 +12,9 @@ export default function MiniSlider({images}) {
     const { scrollY } = useScroll()
     const imagesCount = images.length
     const [slideNumber, setSlideNumber] = useState(0);
-    const [photoModale, setPhotoModale] = useState(null)
+    const [photoModale, setPhotoModale] = useState(null);
+
+    const root = document.getElementById("root");
 
     useEffect(() => {
     if (photoModale) {
@@ -58,7 +60,11 @@ export default function MiniSlider({images}) {
                 <ModalePhoto
                     images={images}
                     altTxt="Image de projet"
-                    onClose={() => setPhotoModale(null)}
+                    onClose={() => {
+                        setPhotoModale(null)
+                        root.classList.remove("no-scroll");
+                        }
+                    }
                     slide={slideNumber}
                 />
             }

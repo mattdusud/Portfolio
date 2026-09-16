@@ -140,3 +140,8 @@
         }
     }
 }
+
+//WIP: lock the scroll of root div if modale opened
+.no-scroll {
+    overflow: hidden;
+}
